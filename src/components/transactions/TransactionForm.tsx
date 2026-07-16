@@ -105,7 +105,7 @@ export function TransactionForm({ editing, onDone }: TransactionFormProps) {
               className={`rounded-md px-4 py-1.5 text-sm font-semibold transition-colors ${
                 type === option
                   ? "bg-white text-slate-900 shadow-sm dark:bg-slate-950 dark:text-slate-100"
-                  : "text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100"
+                  : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
               }`}
             >
               {option === "expense" ? "Расход" : "Доход"}

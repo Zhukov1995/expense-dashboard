@@ -51,7 +51,7 @@ export function KpiCards() {
     {
       label: "Доходы",
       value: totalIncome(transactions),
-      accent: "text-emerald-600 dark:text-emerald-400",
+      accent: "text-emerald-700 dark:text-emerald-400",
       icon: upIcon,
     },
     {

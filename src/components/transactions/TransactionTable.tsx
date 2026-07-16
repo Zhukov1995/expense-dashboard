@@ -116,7 +116,7 @@ export function TransactionTable({ transactions, onEdit }: TransactionTableProps
                     <td
                       className={`whitespace-nowrap px-5 py-3 text-right font-semibold tabular-nums ${
                         isIncome
-                          ? "text-emerald-600 dark:text-emerald-400"
+                          ? "text-emerald-700 dark:text-emerald-400"
                           : "text-rose-600 dark:text-rose-400"
                       }`}
                     >
