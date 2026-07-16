@@ -1,5 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { KpiCards } from "@/components/kpi/KpiCards";
+import { CategoryChart } from "@/components/charts/CategoryChart";
+import { TrendChart } from "@/components/charts/TrendChart";
 
 export default function App() {
   return (
@@ -7,6 +9,10 @@ export default function App() {
       <Header />
       <main className="mx-auto max-w-6xl space-y-6 px-4 py-6 sm:px-6">
         <KpiCards />
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <CategoryChart />
+          <TrendChart />
+        </div>
       </main>
     </div>
   );
