@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Тёмная тема управляется классом `dark` на <html> (не media-запросом),
+   чтобы работал ручной переключатель темы. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
