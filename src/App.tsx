@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { KpiCards } from "@/components/kpi/KpiCards";
 import { CategoryChart } from "@/components/charts/CategoryChart";
 import { TrendChart } from "@/components/charts/TrendChart";
+import { TransactionForm } from "@/components/transactions/TransactionForm";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
           <CategoryChart />
           <TrendChart />
         </div>
+        <TransactionForm />
       </main>
     </div>
   );
