@@ -11,4 +11,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rolldownOptions: {
+      output: {
+        // Библиотека графиков — в отдельный чанк, чтобы её кэшировали
+        // независимо от кода приложения.
+        advancedChunks: {
+          groups: [{ name: 'charts', test: /recharts|d3-/ }],
+        },
+      },
+    },
+  },
 })
